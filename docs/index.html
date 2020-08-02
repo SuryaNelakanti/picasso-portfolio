@@ -4,10 +4,13 @@
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
 <style media="screen">
-
- body{
+html{
+  scroll-behavior: smooth;
+}
+body{
     background-color: #FAFAFA;
   }
 div.budy{
@@ -59,20 +62,29 @@ h1{
   text-align: center;
   font-family: 'Montserrat',sans-serif;
   font-weight: bolder;
+  font-size: 60px;
 }
 h3{
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+
+}
+div.pablo{
   font-family: 'Karla', sans-serif;
   font-weight: lighter;
-  text-align: center;
-  margin-top: -20px;
+  place-items: center;
+  position: relative;
+  margin-top: 0px;
 }
 h2{
-
   font-family: 'Montserrat',sans-serif;
   font-weight: bolder;
 }
 p{
   font-family: 'Karla', sans-serif;
+
 }
 div.lyr1{
   padding-top: 300px;
@@ -140,77 +152,287 @@ div img{
   margin-top: 30px;
   margin: 0px 400px 200px 100px;
 }
-div.flexy{
+div.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+
+}
+div.abtmain{
+  margin-top: 150px;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: #444;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #757575;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+hr.dashed {
+  border-top: 2px dotted #bbb;
+}
+hr.ds {
+  border-bottom: 2px dashed #bbb;
+}
+.button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #FAFAFA;
+  border: 1px blue;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.pbutton {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #FAFAFA;
+  border: 1px blue;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.pbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pbutton span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.pbutton:hover span {
+  padding-right: 20px;
+}
+
+.pbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+div.abtme{
+  text-align: center;
+}
+.parallax {
+  /* The image used */
+
+  /* Full height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pol{
+  text-align: left;
+}
+.polo{
+  position: relative;
+  margin: 100px;
+  top: 100px;
+  text-align: center;
 }
 </style>
 </head>
 <body>
+  <div class="w3-container">
   <header>
       <div class="topper">
-          <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/picassign1.png?raw=true" alt="logo" height="70px" class="logo"</img>            <nav>
+ <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/picassign1.png?raw=true" alt="logo" height="70px" class="logo"</img>             <nav>
               <ul>
-                <li><a href="">My Work</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <div class="dropdown">
+                  <button class="dropbtn">MY WORK
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-content">
+                    <a href="#blu">1901-1904</a>
+                    <a href="#rose">1904-1906</a>
+                    <a href="#afric">1907-1909</a>
+                    <a href="#cube">1909-1912</a>
+                    <a href="#neo">1918-1945</a>
+                    <a href="#pwar">1945+</a>
+                </div>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
         </div>
   </header>
 <div class="budy">
   <div class="lyr1">
-    <div class="animate__animated animate__fadeIn">
-      <div class="pablo">
+      <div class="animate__animated animate__fadeIn">
         <h1>
             Pablo Picasso.<br><span class="bio"><sub>  </sub></span>
         </h1>
+        <div class="pablo">
         <h3>You know who I am. Painter, Sculptor.<br> Inventor of the cubism movement. </h3>
     </div>
   </div>
   </div>
+  <hr class="dashed">
   <div class="split">
     <ul>
       <li>-My Work-</li>
     <ul>
   </div>
-<div class="animate__animated animate__fadeInUpBig animate__delay-2s">
+<div class="w3-container">
+<div class="animate__animated animate__fadeIn animate__delay-2s">
   <div flexy>
   <div class="blue">
-      <h2>The Blue Period.</h2>
+      <h2 id="blu">The Blue Period.</h2>
       <p>Characterized by sombre paintings rendered in shades of blue and blue-green, only occasionally warmed by other colours, began either in Spain in early 1901, or in Paris in the second half of the year.<p>
+      <a href="#rose"><button class="button" style="vertical-align:middle"><span>Next</span></button></a>
   </div>
   <div class="1903">
-<img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1903-old-guitarist.jpg?raw=true" alt="1903" height="600px"/>  </div>
+  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1903-old-guitarist.jpg?raw=true" alt="1903" height="600px"/>
+  </div>
   <div class="rose">
-        <h2>The Rose Period.</h2>
+        <h2 id="rose">The Rose Period.</h2>
         <p>Characterized by a lighter tone and style utilizing orange and pink colours, and featuring many circus people, acrobats and harlequins known in France as saltimbanques.</p>
+        <a href="#blu"><button class="pbutton" style="vertical-align:middle"><span>Prev</span></button></a>
+      <a href="#afric"> <button class="button" style="vertical-align:middle"><span>Next</span></button></a>
   </div>
   <div class="1903">
-  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1905-portrait-of-gertrude-stein.jpg?raw=true" alt="1903" height="600px"/>  </div>
+  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1905-portrait-of-gertrude-stein.jpg?raw=true" alt="1905" height="600px"/> 
+  </div>
   <div class="africa">
-      <h2>The African Influence.</h2>
+      <h2 id="afric">The African Influence.</h2>
       <p>A visit to Africa heavily influenced the artwork. Taking inspiration from the masks and the statues, a new style was developed. Widely panned by critics at the time, each painting of that era now goes for millions.</p>
+      <a href="#rose"><button class="pbutton" style="vertical-align:middle"><span>Prev</span></button></a>
+    <a href="#cube"><button class="button" style="vertical-align:middle"><span>Next</span></button></a>
   </div>
   <div class ="1903">
-  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1907-les-.jpg?raw=true" alt="1903" height="600px"/>  </div>
+  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1907-les-.jpg?raw=true" alt="1907" height="600px"/> 
+  </div>
   <div class="cube">
-      <h2>The Cubism Period.</h2>
+      <h2 id="cube">The Cubism Period.</h2>
       <p>Developed with Georges Braque using monochrome brownish and neutral colours. Both artists took apart objects and "analyzed" them in terms of their shapes. Picasso and Braque's paintings at this time share many similarities.</p>
+      <a href="#afric"> <button class="pbutton" style="vertical-align:middle"><span>Prev</span></button></a>
+    <a href="#neo"><button class="button" style="vertical-align:middle"><span>Next</span></button></a>
   </div>
   <div class="1903">
-  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1911-ma-jolie.jpg?raw=true" alt="1903" height="600px"/>  <div class="neo">
-      <h2>Neoclassicism and Surrealism.</h2>
+  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1911-ma-jolie.jpg?raw=true" alt="1911" height="600px"/>
+  <div class="neo">
+      <h2 id="neo">Neoclassicism and Surrealism.</h2>
       <p>Developed new imagery and formal syntax for expressing himself emotionally, "releasing the violence, the psychic fears and the eroticism that had been largely contained or sublimated since 1909".</p>
+      <a href="#cube"><button class="pbutton" style="vertical-align:middle"><span>Prev</span></button></a>
+      <a href="#pwar"><button class="button" style="vertical-align:middle"><span>Next</span></button></a>
   </div>
   <div class="1903">
-  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1932-the-weeping-woman.jpg?raw=true" alt="1903" height="600px"/>  </div>
+  img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1932-the-weeping-woman.jpg?raw=true" alt="1932" height="600px"/>
+  </div>
   <div class="war">
-    <h2>Post War.</h2>
+    <h2 id="pwar">Post War.</h2>
     <p>Picasso's final works were a mixture of styles, his means of expression in constant flux until the end of his life. Devoting his full energies to his work, Picasso became more daring, his works more colourful and expressive.</p>
+    <a href="#neo"><button class="pbutton" style="vertical-align:middle"><span>Prev</span></button></a>
   </div>
   <div class="1903">
-  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1968-musketeer.jpg?raw=true" alt="1903" height="600px"/>
+  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/1968-musketeer.jpg?raw=true" alt="1968" height="600px"/>
   </div>
 </div>
 </div>
 </div>
+</div>
+</div>
+<hr class="dashed">
+<div class="abtme"style="height:1000px;">
+  <h2 id="about">About Me</h2>
+<div class="abtmain">
+  <img src="https://github.com/SuryaNelakanti/picasso-portfolio/blob/master/Picasso%20Website/Images/selfp.jpg?raw=true" alt="portrait" height="600px"/>
+  <p class="pol">As one of the greatest influences on the course of 20th-century art, Pablo Picasso often mixed various styles to create wholly new interpretations of what he saw. He was a driving force in the development of Cubism, and he elevated collage to the level of fine art.<br>
+With the courage and self-confidence unhindered by convention or fear of ostracism, Picasso followed his vision as it led him to fresh innovations in his craft. Similarly, his continual quest for passion in his many romantic liaisons throughout his life inspired him to create innumerable paintings, sculptures and etchings. Picasso is not just a man and his work. Picasso is always a legend, indeed almost a myth. In the public view he has long since been the personification of genius in modern art. Picasso is an idol, one of those rare creatures who act as crucibles in which the diverse and often chaotic phenomena of culture are focussed, who seem to body forth the artistic life of their age in one person.<p>
+</div>
+</div>
+</div>
+<div class="parallax"></div>
+
+<div style="height:600px;background-color:#14103c;color:white;font-size:20px">
+  <h2 id="contact" class="polo">Contact Me</h2>
+<p class="polo">Designed by: Surya Nelakanti<br>P.S: Not Picasso. <br><a href="https://www.linkedin.com/in/surya-nelakanti-49470b172/">LinkedIn</a> / <a href="https://github.com/SuryaNelakanti">GitHub</a> / <a href="mailto:suryateja.nelakanti@gmail.com">E-Mail</a></p>
+</div>
+
+<div class="parallax"></div>
 </body>
