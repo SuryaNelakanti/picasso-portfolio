@@ -6,4 +6,4 @@ Wanted to design a minimalist, clean interface website.<br>
 Animations were done using animation.css.<br>
 Website was inspired by Jen Bayne's site.<br>
 Please note that the site won't work well on mobiles, as it hasn't been optimized for that yet.<br>
-Link to the site:<br>https://suryanelakanti.github.io/picasso-portfolio/docs/index.html
+Link to the site:<br>https://suryanelakanti.github.io/picasso-portfolio
