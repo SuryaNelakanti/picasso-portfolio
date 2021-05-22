@@ -1,0 +1,276 @@
+:root{
+  --hfont: 'Montserrat', serif;
+  --pfont: 'Lato', sans-serif;; 
+}
+h1,h2,h3{
+  font-family: var(--hfont);
+}
+p{
+  font-family: var(--pfont);
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  padding: 10px 0;
+  margin: auto;
+  top: 0;
+  font-family: var(--pfont);
+  z-index: 1000;
+  height: 100px;
+  background: white;
+}
+.menu-wrap {
+  max-width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  z-index: 10;
+}
+.logo-img {
+  height: 50px;
+  margin-top: 34px;
+}
+.menu-icon {
+  font-size: 2.4em;
+  color: black;
+  line-height: 50px;
+}
+nav {
+  position: absolute;
+  background-color: var(--bgcolor);
+  left:0;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+nav ul li {
+  padding: 0 12px;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  top: -7.5px;
+
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: var(--btncolor);
+}
+#checkbox {
+  display: none;
+}
+
+
+@media (min-width: 1268px) { 
+  .menu-icon {
+      display: none;
+  }
+  nav {
+      position: relative;
+      background-color: transparent;
+  }
+  nav ul {
+      padding: 12px 0;
+      text-align: right;
+      max-height: 400px;
+  }
+  nav ul li {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      padding-left: 20px;
+  }
+  .dropdown:hover .dropdown-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative;
+      top: -20px;
+      }
+ 
+}
+/* Need to work the mobile nav bar aspect of it. Keep js? */
+@media (max-width: 1268px){
+  li{
+      text-align: center;
+  }
+  .dropdown:hover .dropdown-content {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      top: -10px;
+  }
+  .menu-icon{
+        position: relative;
+        top: 30px;
+  }
+  .menu-icon:hover .menu-icon{
+        color: var(--btncolor);
+  }
+ 
+  #checkbox:checked ~ nav ul {
+        max-height: 400px;
+        padding: 15px 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }  
+}
+.dropdown .dropbtn {
+  font-family: var(--pfont);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: #444;
+  padding: 14px 22.5px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: var(--bgcolor);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 70px;
+  background-color: var(--bgcolor);
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  display: block;
+  text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+  background-color: #ddd;
+  }
+  
+.centeredText{
+  text-align: center;
+  margin-top: 35vh;
+  line-height: 20px;
+}
+
+.centeredText h1{
+  font-family: var(--hfont);
+  font-size: 50px;
+}
+
+.centeredText p{
+  font-family: var(--pfont);
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+}
+.timePeriods{
+  margin-top: 45vh;
+}
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20vh;
+  flex-wrap: wrap-reverse;
+}
+.textPart{
+  width: 350px;
+}
+.imagePart::hover{
+    height: 800px;
+    transition: 1s ease-out;
+}
+.aboutMe{
+  background: #e63946;
+  color: #f1faee;
+  width: 100vw;
+  margin-left: -10.6vw;
+  min-height: 650px;
+  padding-top: 30px;
+}
+.parallaxFooter{
+  background: #1d3557;
+  text-align: center;
+  width: 100vw;
+  margin-left: -10.6vw;
+  color: #f1faee;
+  height: 300px;
+  margin-top: -20px;
+}
+.parallaxFooter a{
+  text-decoration: none;
+  color: #457b9d;
+}
+span{
+  font-weight: 300;
+  font-style: italic;
+}
+#contact{
+  position: relative;
+  top: 70px;
+}
+@media(max-width: 1268px){
+  body{
+    width: 100%;
+  }
+  .aboutMe{
+    background: #e63946;
+    color: #f1faee;
+    padding-top: 30px;
+    margin: 0 auto;
+  } 
+  .parallaxFooter{
+    margin-left: 0;
+    background: #1d3557;
+  text-align: center;
+  color: #f1faee;
+  height: 300px;
+  }
+
+}
